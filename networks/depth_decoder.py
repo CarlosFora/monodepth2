@@ -11,8 +11,8 @@ import torch
 import torch.nn as nn
 
 from collections import OrderedDict
-from layers import *
-
+#from layers import *
+from monodepth2.layers import *
 
 class DepthDecoder(nn.Module):
     def __init__(self, num_ch_enc, scales=range(4), num_output_channels=1, use_skips=True):
